@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <script>
-        const max = 57;
-        let actual = max - 13;
 
-        let percentage = actual / max;
+    <div class="header">
+        <ul class="navbar">
+            <a href="home.html">Home</a>
+            <a href="links.html">Links</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+    </div>
+
+    <div class="quests">
+        <div class="left-bar">
+        </div>
+        <ul class="todo">
+            <li>Redmane Castle, southern edge Caelid Wilds. Festival there.</li>
+            <li>Heal monkey guy in Coastal Cave?</li>
+            <li><input id="textBox" type="text"></li>
+            <div id="output"></div>
+        </ul>
+        <div class="right-bar">
+        </div>
+    </div>
+
+    <div class="footer">
+        Footer Text
+    </div>
+
+    <script>
+        const textBox = document.querySelector("#textBox");
+        const output = document.querySelector("#output")
+
+        textBox.addEventListener('keydown', event => output.textContent = `You pressed "${event.key}".`);
     </script>
 </body>
 </html>

@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+ul {
+    list-style-type: lower-greek;
+    font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: space-between;
+    padding-right: 35px;
+    background-color: antiquewhite;
+    list-style-type: none;
+}
+
+.quests {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-bar,
+.right-bar {
+    background-color: brown;
+    height: 80vh;
+    width: 30vh;
+}
+
+.header {
+    background-color: antiquewhite;
+}
+
+.footer {
+    background-color: antiquewhite;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
