@@ -24,8 +24,9 @@
         <ul class="todo">
             <li>Redmane Castle, southern edge Caelid Wilds. Festival there.</li>
             <li>Heal monkey guy in Coastal Cave?</li>
+            <li>Enter your name:</li>
             <li><input id="textBox" type="text"></li>
-            <div id="output"></div>
+            <div id="name"></div>
         </ul>
         <div class="right-bar">
         </div>
@@ -36,10 +37,11 @@
     </div>
 
     <script>
-        const textBox = document.querySelector("#textBox");
-        const output = document.querySelector("#output")
+       const textBox = document.getElementById('#textBox');
+       const name = document.getElementById('#name').name;
 
-        textBox.addEventListener('keydown', event => output.textContent = `You pressed "${event.key}".`);
+       textBox.addEventListener('name', event => output.textContent = `Hello "${name}".`);
+    
     </script>
 </body>
 </html>
